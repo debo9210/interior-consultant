@@ -8,88 +8,70 @@
   maximum-scale=5"
     />
 
-    <link rel="icon" href="devchallenges.png" />
+    <!-- <link rel="icon" href="devchallenges.png" /> -->
 
-    <link
+    <!-- <link
       rel="shortcut icon"
       type="image/x-icon"
       href="https://devchallenges.io/"
-    />
+    /> -->
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
 
-    <title>Devchallenges</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora&family=Montserrat&display=swap" rel="stylesheet">
 
-      ul {
-        padding-left: 24px;
-      }
+    <link rel="stylesheet" href="styles.css">
 
-      li {
-        margin-bottom: 8px;
-      }
+    <title>Interior Consultant</title>
 
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <i onclick="change(this)" class="fas fa-bars fa-2x"></i>
+    <nav class="navbar">
+        <a href="#" class="brand">This Interior</a>
+        <div class="mode">
+          <ul class="navbar-items">
+            <li class="nav-item active"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Collection</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <main>
+      <div class="heading">
+        <h1>Modern interior</h1>
+        <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+        <a href="#">Read more  <i class="fas fa-long-arrow-alt-right"></i></a>
       </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+      <div class="imageSection">
+        <img class="mainImage" src="images/photo1.png" alt="interior design">
+        <div class="designerSection">
+          <div class="designer">
+            <img src="images/photo2.png" alt="Interior designer">
+            <div>
+              <p class="name">Aliza Webber</p>
+              <p class="title">Interior designer</p>
+            </div>
+          </div>
+          <p class="reference">Designed in 2020 by Aliza Webber</p>
+        </div>
+        <hr>
+      </div>
+    </main>
+
+    <footer>
+      <small>debo9210 @ DevChallenges.io</small>
+    </footer>
+
+
+    <script src="index.js"></script>
   </body>
 </html>
